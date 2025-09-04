@@ -4,15 +4,72 @@
     <title>06 - Create a HTML form</title>
   </head>
   <body>
-    <!-- Add a form tag to your HTML page.  -->
-    <!-- Inside the form tag, add a label tag and set the for attribute to a unique name for your input field.  -->
-    <!-- Inside the label tag, add an input tag and set the type attribute to the type of input
-    field you want to create (e.g. text, email, password, etc.).  -->
-    <!-- Add a name attribute to the input tag and set it to a unique name for your input field. -->
-    <!-- Repeat steps 2-4 to add as many input fields as you need.  -->
-    <!-- Add a button tag inside the form tag and set the type attribute to submit.  -->
-    <!-- Add text between the opening and closing button tags that will be displayed on the button. -->
-
-    <!-- READUP: HTML forms https://blog.codeskills.dev/html-forms -->
+   <h1>All common HTML</h1>
+   <form>
+   <fieldset> 
+    <legend>Basic</legend>
+    Name: <input placeholder="Full name"">
+    <br>
+    Email: <input placeholder="------@gmail.com""><br>
+    Password: <input placeholder="At least 8 characters""><br>
+    Telephone: <input placeholder="+250 7--------""><br>
+    Search: <input placeholder="Search here""><br>
+    URL: <input placeholder="https://www.example.com""><br>
+   </fieldset>
+   <fieldset>
+    <legend>Numbers & Sliders</legend>
+    Number: <input placeholder="0""><br>
+    Range (0-10): <input type="range" value="0"> 5
+   </fieldset>
+   <fieldset>
+    <legend>Date & Time</legend>
+    Date: <input type="date"><br>
+    Time: <input type="time"><br>
+    Datetime (local) <input type="datetime-local"><br>
+    Month: <input type="month" placeholder="mm-yyyy"><br>
+    Week: <input type="week" placeholder="yyyy-W##"><br>
+   </fieldset>
+   <fieldset>
+    <legend>Choices</legend>
+    Radio(plan): Basic<input type="radio"> Pro<input type="radio"> Enterprise<input type="radio"><br>
+    Checkboxes: <input type="checkbox">Subscribe to update <input type="checkbox"> I agree to the terms <br>
+    Select: <select name="" id="">
+      <option value="">choose your country</option>
+      <option value="">Sudan</option>
+      <option value="">Rwanda</option>
+      <option value="">Cairo</option>
+      <option value="">India</option>
+      <option value="">Germany</option>
+      <option value="">Turkey</option>
+      <option value="">Syria</option>
+      <option value="">Canada</option>
+      <option value="">Australia</option>
+      <option value="">Japan</option>
+      <option value="">Mexico</option>
+      <option value="">China</option>
+    </select>
+   </fieldset>
+   <fieldset>
+    <legend>Text-area & Datelists</legend>
+    <textarea placeholder="write your masseage......"></textarea><br>
+    Text with Datelists <input placeholder="start typing...">
+   </fieldset>
+   <fieldset>
+            <legend>Color&File</legend>
+            Color: <input type="color" name="" id="">
+            <br>File Upload: <input placeholder="Choose File">
+        </fieldset>
+        <fieldset>
+            <legend>Hidden & Read only</legend>
+            Read-only: <input placeholder="INV-000123"">
+            <br> Disabled: <input placeholder="Disabled example"">
+        </fieldset>
+        <fieldset>
+            <legend>Buttons</legend>
+            <button>Submit</button>
+            <button>Reseat</button>
+            <button>Plain Button</button>
+        </fieldset>
+   </form>
   </body>
 </html>
